@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnugSips&trade; | Self-Warming Mug</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnugSips™ | Self-Warming Mug</title>
   <style>
     body {
       margin: 0;
@@ -16,8 +16,8 @@
       align-items: center;
     }
     header {
-      background: #fff;
-      padding: 2rem;
+      background: #ffffff;
+      padding: 2rem 1rem;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       width: 100%;
@@ -31,24 +31,22 @@
       margin-top: 0;
     }
     section {
-      max-width: 600px;
-      margin: 2rem;
+      max-width: 900px;
+      margin: 2rem 1rem;
       background: white;
       padding: 2rem;
       border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     ul {
       list-style: none;
       padding: 0;
-      font-size: 1rem;
     }
     ul li::before {
       content: '✅';
       margin-right: 0.5rem;
     }
-    a.cta-button {
+    .cta-button {
       display: inline-block;
       margin-top: 1.5rem;
       padding: 1rem 2rem;
@@ -58,10 +56,30 @@
       border-radius: 0.5rem;
       font-weight: bold;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    #order {
+      margin-top: 2rem;
+      background: #edf2f7;
+      padding: 2rem;
+      border-radius: 0.75rem;
+    }
     footer {
       margin: 3rem 0 1rem 0;
       font-size: 0.8rem;
       color: #888;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
     }
   </style>
 </head>
@@ -73,14 +91,27 @@
 
   <section>
     <h2>The Self-Warming, Reusable Mug</h2>
-    <p>Introducing SnugSips™, the eco-friendly travel mug that keeps your drink warm — no batteries or outlets required.</p>
+    <p>SnugSips™ is the eco-friendly travel mug that keeps your drink warm for hours — no batteries or plugs needed.</p>
     <ul>
-      <li>Self-warming heat insert</li>
+      <li>Self-warming with heat insert</li>
       <li>Eco-friendly & leakproof</li>
-      <li>Stylish, giftable design</li>
-      <li>Dishwasher-safe</li>
+      <li>Modern design, gift-ready</li>
+      <li>Dishwasher-safe & durable</li>
     </ul>
-    <a class="cta-button" href="#">Pre-Order Now – 20% Off</a>
+    <a class="cta-button" href="product.html">Pre-Order Now</a>
+
+    <div class="gallery">
+      <img src="https://images.pexels.com/photos/5857503/pexels-photo-5857503.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mug Photo 1" />
+      <img src="https://images.pexels.com/photos/5857536/pexels-photo-5857536.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mug Photo 2" />
+      <img src="https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mug Photo 3" />
+    </div>
+
+    <div id="order">
+      <h3>Pre-Order SnugSips™ Now</h3>
+      <p><strong>Price:</strong> $24.99 (20% off launch sale)</p>
+      <p><strong>Shipping:</strong> Free worldwide shipping 🌍</p>
+      <a class="cta-button" href="product.html">Reserve My Mug</a>
+    </div>
   </section>
 
   <footer>
